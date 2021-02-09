@@ -83,6 +83,36 @@ def weatherPrep(currentWeather):
 # weatherPrep("Rainy")
 
 # [X] Conditionals
-# [ ] Loops
+# [X] Loops  --> for / while
+
+# start: 0  exclusive stop: 10  step: 1
+for i in range(10):
+    pass # pass is when you don't want a loop or 
+         # function to do anything yet -- good for testing.
+    # print(i)
+# 0 -----> 9
+
+# start: 1, exclusive stop: 10, step: 1
+for i in range(1, 10):
+    pass
+    # print(i)
+# 1 -----> 9
+
+# start: 1, exclusive stop: 10, step: 2
+for i in range(1, 10, 2):
+    print(i)
+    if i % 3 == 0: 
+        i += 100
+        # i is now i + 100, but when it goes back up to the top
+        # it will still go to the next number in the sequence.
+        print(i)
+
+# for (var i = 0; i < 5.5; i++) {
+#     if (i % 3 == 0) {
+#         i += 2
+#     }
+# }
+
+
 # [X] Functions
     #   Review
