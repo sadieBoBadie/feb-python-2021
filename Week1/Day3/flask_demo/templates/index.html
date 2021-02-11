@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" alt="">
+
+
+    <p>Phrase: {{ greeting }}</p>
+    <p>Times: {{ num_times }}</p>
+        
+    {% for x in range(0,num_times): %}
+        <img src="{{ url_for('static', filename='bateson_nozick.jpg') }}" alt="">
+    {% endfor %}
+        
+</body>
+</html>
