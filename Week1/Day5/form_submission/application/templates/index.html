@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Form Submission</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+
+
+    <!-- Django code flow from request
+    
+    Settings --- project urls -- app urls -- some function in views -- runs function
+    
+    Some of events that trigger requests
+
+    clicking things ==>
+
+        - enter info on a form  then clicking *submit button -->
+
+    <form action="/process_form" method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" 
+            class="form-control" 
+            id="first-name" 
+            placeholder="Example input"
+            name="first_name"
+            >
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Last Name</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input" name="last_name">
+        </div>
+
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Credit Card Number</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input" name="credit_card_num">
+        </div>
+
+        <div class="form-group">
+
+            <input type="submit" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+          </div>
+      </form>
+
+        <!-- - clicking hyperlinks
+
+    <a href="/kitties/red">Click me to go to the kitty page</a>
+
+        - typing url
+
+        - refreshing the page -->
+
+
+</body>
+</html>
