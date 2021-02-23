@@ -1,0 +1,14 @@
+.top {
+    display: flex;
+    width: auto;
+}
+
+.top form {
+    width: 40%;
+    margin: 2%;
+    padding: 2%;
+}
+.bottom {
+    text-align: center;
+    width: 40%;
+}
