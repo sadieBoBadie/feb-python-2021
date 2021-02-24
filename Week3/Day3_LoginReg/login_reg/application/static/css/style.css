@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    width: 1000px;
+}
+
+#flash {
+    display: block;
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.entry {
+    border-radius: 3px;
+    display: block;
+    padding: 5px;
+}
+
+.entry-form {
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
+.entry-form h1{
+    margin-left: 200px;
+}
+.btn {
+    background-color: rgb(77, 184, 77);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-left: 100px;
+    margin-top: 15px;
+}
