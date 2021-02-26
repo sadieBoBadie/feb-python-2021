@@ -12,6 +12,8 @@ def registerUser(request):
 
     if errors:
         # put error messages in messages
+        for form_field,message in errors.items():
+            messages.error(request, message)
         return redirect('/')
 
     # otherwise...
