@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 import bcrypt
+from .models import User
 from django.contrib import messages
 
 # Create your views here.
@@ -22,6 +23,8 @@ def registerUser(request):
     new_user = User.objects.create(
         first_name = request.POST["first_name"],
         last_name = request.POST["last_name"],
+        birthday = request.POST["birthday"],
+        # YYYY-MM-DD
         email = request.POST["email"],
         password = pw_hash,
     )
